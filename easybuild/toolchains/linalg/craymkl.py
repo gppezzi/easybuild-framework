@@ -42,8 +42,7 @@ TC_CONSTANT_CRAY_MKL = 'CrayIntelMKL'
 class CrayMKL(LinAlg):
     """Support for Cray/Intel MKL library, which provides BLAS/LAPACK support."""
     # BLAS/LAPACK support
-    # via cray-libsci module, which gets loaded via the PrgEnv module
-    # see https://www.nersc.gov/users/software/programming-libraries/math-libraries/libsci/
+    # via intel (MKL) module, which gets loaded via the PrgEnv module
     BLAS_MODULE_NAME = [CRAY_MKL_MODULE_NAME]
 
     # no need to specify libraries, compiler driver takes care of linking the right libraries
